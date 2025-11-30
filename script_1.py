@@ -29,7 +29,7 @@ chain = prompt | llm
 
 # Invoke the chain with a specific topic and enable Langfuse tracing
 # The callbacks parameter ensures all interactions are logged to Langfuse
-response = chain.invoke({"topic": "cats"}, config={"callbacks": [langfuse_handler]})
+response = chain.invoke({"topic": "dogs"}, config={"callbacks": [langfuse_handler]})
 
 # Print the generated joke from the LLM response
 print(response.content)
